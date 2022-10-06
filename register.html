@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenshin Impact Register</title>
+    <link rel="icon" href="./IMAGE/logo no background.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+        <img src="./IMAGE/logo no background.png" width="250">
+    </header>
+
+    <!--NAVIGASI-->
+    <div class="navigasi-bar">
+        <div class="toggle" onclick="burgerButton()">
+            <svg viewBox="0 0 100 80" width="40" height="40" fill="#4ca1a3">
+                <rect width="100" height="15"></rect>
+                <rect y="30" width="100" height="15"></rect>
+                <rect y="60" width="100" height="15"></rect>
+            </svg>
+        </div>
+
+        <div class="bar" id="barbar">
+            <div class="item-navigasi">
+                <a class="destination" href="./Home.html">HOME</a>
+            </div>
+
+            <div class="item-navigasi option">
+                <a class="destination" href="#">MENU</a>
+                <div class="menu-down">
+                    <a class="item-down" href="./character.html">CHARACTER</a>
+                    <a class="item-down" href="./Gallery.html">GALLERY</a>
+                </div>
+            </div>
+
+            <div class="item-navigasi">
+                <a class="destination" href="./aboutgame.html">ABOUT</a>
+            </div>
+
+            <div class="item-navigasi">
+                <a class="destination" href="./register.html">REGISTER</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="slogan">
+        <span>TECH OTAKU SAVE THE WORLD, <br> Every journey has its final day.<br> ~Mihoyoman~</span>
+
+    </div>
+
+    <!-- Register -->
+    <br> <br>
+    <div class="content-register">
+        <form onsubmit="validasi(event)">
+            <div class="container-register">
+                <label for="username">Username</label>
+                <input id="username" type="text" placeholder="Input Username"> <br>
+
+                <label for="email">Email</label>
+                <input id="email" type="text" placeholder="Input Email"><br>
+
+                <label for="password">Password</label>
+                <input id="password" type="password" placeholder="Input Password"> <br>
+
+                <label for="confirm password">Confirm password</label>
+                <input id="confirmpass" type="password" placeholder="Input Confirm Password"> <br>
+
+                <input type="checkbox" id="checker">
+                <label for="checkbox">I aggree with terms and condition </label> <br>
+
+                <input type="submit" value="register">
+                <br>
+                <div class="error-message" id="error-msg"></div>
+            </div>
+        </form>
+    </div>
+
+    <!--FOOTER-->
+    <div class="footer">
+        <footer>
+            <div class="gambar">
+                <div class="img1">
+                    <img src="./IMAGE/download_4.png" alt="" height="100px">
+                </div>
+                <div class="img2">
+                    <img src="./IMAGE/images.png" alt="" height="100px">
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./register.js"></script>
+
+
+</body>
+
+</html>
